@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link type="image/png" rel="icon" href="Images/icons8-estimate-windows-11-color-32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tip Calculator</title>
+  </head>
+  <body class="bg-neutral-400 text-lg">
+    <h1 class="m-auto text-center pt-8 text-3xl font-light">Tip Calculator</h1>
+      <div class="m-auto px-4 mt-10 pt-4 rounded-t-3xl bg-neutral-300">
+        
+        <div class="m-auto ml-10 mt-4">
+          <label class="text-left">Bill Total</label>
+          <br>
+
+          <div class="bg-neutral-100 rounded p-1 m-auto mr-10">
+            <div class="grid grid-cols-2 mr-7">
+              <select class="w-8 rounded bg-neutral-100">
+                <option>£</option>
+                <option>€</option>
+                <option>$</option>
+              </select>
+
+              <input type="text" placeholder="0" class="w-36 text-right text-xl pr-1 bg-neutral-100 m-auto">
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="ml-10 mt-4">Select Tip %</h1>
+
+          <div class="grid gap-6 grid-cols-2 py-4 pb-5 px-10 h-full w-full m-auto">
+
+            <button class="bg-neutral-100 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              5% 
+            </button>
+            <button class="bg-neutral-100 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              10%
+            </button>
+            <button class="bg-neutral-100 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              15%
+            </button>
+            <button class="bg-neutral-100 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              25%
+            </button>
+            <button class="bg-neutral-100 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              50%
+            </button>
+            <button class="bg-neutral-200 w-32 py-2 px-2 m-auto rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              Custom
+            </button>
+          </div>
+
+          <div class="m-auto ml-10 mt-4">
+            <label class="text-left">Number Of People</label>
+            <br>
+          
+            <div class="bg-neutral-100 rounded p-1 m-auto mr-10">
+              <div class="grid grid-cols-2 mr-7">
+
+                <img src="Images/person.png" class="p-2">
+
+                <input type="text" placeholder="0" class="w-36 text-right pr-1 text-xl bg-neutral-100 m-auto">
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <div class="bg-neutral-100 mx-9 rounded-md pb-1 px-4 grid grid-cols-2">
+            <span>
+              <h1 class="">Tip Ammount</h1>
+              <h2 class="text-sm text-zinc-700">Per Person</h2>
+              </span>
+            <input type="text" placeholder="0.00" class="bg-neutral-100 w-32 m-auto text-right text-xl">
+
+            <span>
+              <h1 class="">Tip Total</h1>
+              </span>
+            <input type="text" placeholder="0.00" class="bg-neutral-100 w-32 m-auto text-right text-xl">
+
+            <button class="bg-neutral-100 w-64 py-2 px-2 m-auto my-2 outline rounded hover:bg-neutral-400 focus:bg-neutral-500 text-xl font-light">
+              Reset
+            </button>
+          </div>
+            
+        </div>
+        &nbsp;
+  </body>
+</html>
+
+
